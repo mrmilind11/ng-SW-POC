@@ -1,1 +1,20 @@
-<p>dashboard-container works!</p>
+<div class="container">
+    <mat-card class="nav-card">
+        <mat-card-content class="nav-card-content">
+            <mat-icon class="nav-card-icon">shopping_cart</mat-icon>
+            <button mat-raised-button color="accent" class="mt10" (click)="viewCart()"> View cart</button>
+        </mat-card-content>
+    </mat-card>
+    <mat-card class="nav-card">
+        <mat-card-content class="nav-card-content">
+            <mat-icon class="nav-card-icon">receipt</mat-icon>
+            <button mat-raised-button color="accent" class="mt10" (click)="viewOrders()"> View orders </button>
+        </mat-card-content>
+    </mat-card>
+    <mat-card class="nav-card">
+        <mat-card-content class="nav-card-content">
+            <mat-icon class="nav-card-icon">store</mat-icon>
+            <button mat-raised-button color="accent" class="mt10" (click)="viewProducts()"> View products </button>
+        </mat-card-content>
+    </mat-card>
+</div>
