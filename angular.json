@@ -140,5 +140,8 @@
       }
     }
   },
-  "defaultProject": "poc-sw"
+  "defaultProject": "poc-sw",
+  "cli": {
+    "analytics": false
+  }
 }
