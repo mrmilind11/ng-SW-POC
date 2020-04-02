@@ -2,7 +2,7 @@
     <mat-toolbar-row class="toolbar-row">
         <mat-icon>shopping_cart</mat-icon>
         <div>Shopping App</div>
-        <button mat-button color="accent" *ngIf="userOrAdmin === 'ADMIN'">User</button>
-        <button mat-button color="accent" *ngIf="userOrAdmin === 'USER'">Admin</button>
+        <button mat-button *ngIf="userOrAdmin === 'ADMIN'" color="accent" (click)="switchSection()">User</button>
+        <button mat-button *ngIf="userOrAdmin === 'USER'" color="accent" (click)="switchSection()">Admin</button>
     </mat-toolbar-row>
 </mat-toolbar>

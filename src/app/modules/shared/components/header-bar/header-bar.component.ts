@@ -18,8 +18,6 @@ export class HeaderBarComponent implements OnInit, OnDestroy {
   private currentUrl = '';
   /******************************** Methods ******************************/
   ngOnInit(): void {
-    this.currentUrl = this.router.url;
-    this.setAdminOrUserSide();
     this.setUpdateListener();
   }
 
@@ -29,6 +27,7 @@ export class HeaderBarComponent implements OnInit, OnDestroy {
   private setUpdateListener(): void {
     this.routerSub = this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
+        this.currentUrl = event.url;
         this.setAdminOrUserSide();
       }
     })
@@ -41,6 +40,9 @@ export class HeaderBarComponent implements OnInit, OnDestroy {
     else {
       this.userOrAdmin = 'USER';
     }
+  }
+  public switchSection(): void {
+    this.router.navigate([this.userOrAdmin === 'USER' ? '/admin' : '/user']);
   }
 
 }

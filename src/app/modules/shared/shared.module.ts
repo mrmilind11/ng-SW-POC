@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { MaterialModule } from './../material/material.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -10,7 +11,8 @@ import { FooterBarComponent } from './components/footer-bar/footer-bar.component
   declarations: [HeaderBarComponent, FooterBarComponent],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule
   ],
   exports: [HeaderBarComponent, FooterBarComponent]
 })
