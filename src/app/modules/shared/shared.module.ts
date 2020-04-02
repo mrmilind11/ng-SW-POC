@@ -12,6 +12,6 @@ import { FooterBarComponent } from './components/footer-bar/footer-bar.component
     CommonModule,
     MaterialModule
   ],
-  exports: []
+  exports: [HeaderBarComponent, FooterBarComponent]
 })
 export class SharedModule { }

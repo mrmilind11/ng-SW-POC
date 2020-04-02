@@ -1,1 +1,8 @@
-<p>header-bar works!</p>
+<mat-toolbar color="primary">
+    <mat-toolbar-row class="toolbar-row">
+        <mat-icon>shopping_cart</mat-icon>
+        <div>Shopping App</div>
+        <button mat-button color="accent" *ngIf="userOrAdmin === 'ADMIN'">User</button>
+        <button mat-button color="accent" *ngIf="userOrAdmin === 'USER'">Admin</button>
+    </mat-toolbar-row>
+</mat-toolbar>
