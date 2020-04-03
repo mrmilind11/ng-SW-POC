@@ -1,3 +1,4 @@
+import { MaterialModule } from './../../material/material.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { CartContainerComponent } from './components/cart-container/cart-contain
   declarations: [CartContainerComponent],
   imports: [
     CommonModule,
-    CartRoutingModule
+    CartRoutingModule,
+    MaterialModule
   ]
 })
 export class CartModule { }

@@ -6,9 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./products-container.component.scss']
 })
 export class ProductsContainerComponent implements OnInit {
-
+  /************************************* Constructor ********************************/
   constructor() { }
-
+  /************************************* Properties *********************************/
+  /************************************* Methods ************************************/
   ngOnInit(): void {
   }
 
