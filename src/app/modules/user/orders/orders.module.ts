@@ -1,3 +1,4 @@
+import { MaterialModule } from './../../material/material.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { OrdersContainerComponent } from './components/orders-container/orders-c
   declarations: [OrdersContainerComponent],
   imports: [
     CommonModule,
-    OrdersRoutingModule
+    OrdersRoutingModule,
+    MaterialModule
   ]
 })
 export class OrdersModule { }
