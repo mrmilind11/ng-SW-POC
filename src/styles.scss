@@ -12,3 +12,9 @@ body {
         flex-direction: column;
     }
 }
+*:focus{
+    outline:none;
+}
+.cursor-pointer{
+    cursor:pointer;
+}

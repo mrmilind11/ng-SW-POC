@@ -1,7 +1,7 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row class="toolbar-row">
-        <mat-icon>shopping_cart</mat-icon>
-        <div>Shopping App</div>
+        <mat-icon [routerLink]="['/']" class="cursor-pointer">shopping_cart</mat-icon>
+        <div [routerLink]="['/']" class="cursor-pointer">Shopping App</div>
         <button mat-button *ngIf="userOrAdmin === 'ADMIN'" color="accent" (click)="switchSection()">User</button>
         <button mat-button *ngIf="userOrAdmin === 'USER'" color="accent" (click)="switchSection()">Admin</button>
     </mat-toolbar-row>
