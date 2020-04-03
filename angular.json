@@ -18,6 +18,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "aot": true,
+            "outputHashing": "all",
             "outputPath": "dist/poc-sw",
             "index": "src/index.html",
             "main": "src/main.ts",
