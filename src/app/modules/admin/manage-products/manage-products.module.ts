@@ -1,3 +1,4 @@
+import { MaterialModule } from './../../material/material.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { ManageProductsContainerComponent } from './components/manage-products-c
   declarations: [ManageProductsContainerComponent],
   imports: [
     CommonModule,
-    ManageProductsRoutingModule
+    ManageProductsRoutingModule,
+    MaterialModule
   ]
 })
 export class ManageProductsModule { }

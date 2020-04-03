@@ -1,0 +1,28 @@
+:host{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    background-image: url('https://image.freepik.com/free-photo/wooden-board-empty-table-blurred-background-perspective-brown-wood-blur-department-store-can-be-used-display-montage-your-products-mock-up-display-product_1253-1458.jpg');
+    background-size: cover;
+}
+.container{
+    padding:50px 150px;
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+.product-table{
+    flex:1;
+}
+.back-nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color:white;
+
+}
