@@ -1,3 +1,4 @@
+import { MaterialModule } from './../../material/material.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { ProductsContainerComponent } from './components/products-container/prod
   declarations: [ProductsContainerComponent],
   imports: [
     CommonModule,
-    ProductsRoutingModule
+    ProductsRoutingModule,
+    MaterialModule
   ]
 })
 export class ProductsModule { }
