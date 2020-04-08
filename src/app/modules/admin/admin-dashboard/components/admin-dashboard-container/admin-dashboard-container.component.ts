@@ -14,6 +14,7 @@ export class AdminDashboardContainerComponent implements OnInit {
   /********************************** Properties ********************************/
   /********************************** Methods ***********************************/
   ngOnInit(): void {
+    console.log('Admin container 2');
   }
 
   public manageProducts() {

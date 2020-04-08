@@ -13,6 +13,7 @@ export class OrdersContainerComponent implements OnInit {
   public ordersList = [];
   /********************************* Methods **********************************/
   ngOnInit(): void {
+    console.log('Orders container loaded');
     this.getOrdersList();
   }
   private getOrdersList() {
@@ -21,6 +22,10 @@ export class OrdersContainerComponent implements OnInit {
       { name: 'Washing powder', quantity: 1, date: new Date(2020, 0, 15), amount: 250 },
       { name: 'Sanitizer', quantity: 5, date: new Date(2020, 1, 25), amount: 350 },
       { name: 'Masks', quantity: 2, date: new Date(2020, 2, 5), amount: 400 },
+      { name: 'Light', quantity: 2, date: new Date(2020, 2, 5), amount: 400 },
+      { name: 'Lighthouse', quantity: 3, date: new Date(2020, 2, 5), amount: 400 },
+      { name: 'Lighthouse 2', quantity: 3, date: new Date(2020, 2, 5), amount: 400 },
+      { name: 'Lighthouse 3', quantity: 3, date: new Date(2020, 2, 5), amount: 400 },
     ]
   }
 

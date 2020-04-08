@@ -21,6 +21,7 @@ export class ManageOrdersContainerComponent implements OnInit {
       { name: 'Washing powder', quantity: 1, date: new Date(2020, 0, 15), amount: 250 },
       { name: 'Sanitizer', quantity: 5, date: new Date(2020, 1, 25), amount: 350 },
       { name: 'Masks', quantity: 2, date: new Date(2020, 2, 5), amount: 400 },
+      { name: 'Hand wash', quantity: 2, date: new Date(2020, 2, 5), amount: 400 },
     ]
   }
 }

@@ -12,6 +12,7 @@ export class ProductsContainerComponent implements OnInit {
   public productsList = [];
   /************************************* Methods ************************************/
   ngOnInit(): void {
+    console.log('products container loaded');
     this.getProductsList();
   }
   private getProductsList(): void {

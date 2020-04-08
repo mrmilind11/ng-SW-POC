@@ -13,6 +13,7 @@ export class CartContainerComponent implements OnInit {
   public cartData = [];
   /************************************* Methods ************************************/
   ngOnInit(): void {
+    console.log('Cart container loaded 1');
     this.getCartData();
   }
 
@@ -22,6 +23,8 @@ export class CartContainerComponent implements OnInit {
       { name: 'Sugar 5kg', quantity: 2, amount: 200, action: 'Buy now' },
       { name: 'Dish soap', quantity: 4, amount: 500, action: 'Buy now' },
       { name: 'Cadbury chocolate', quantity: 10, amount: 100, action: 'Buy now' },
+      { name: 'Cadbury chocolate 2', quantity: 10, amount: 100, action: 'Buy now' },
+      { name: 'Cadbury chocolate 3', quantity: 10, amount: 100, action: 'Buy now' },
     ]
   }
 
